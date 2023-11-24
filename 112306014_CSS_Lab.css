@@ -1,0 +1,97 @@
+body {
+    color: #333;
+    background-color: #f0f0f0;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9F1EAF; 
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    font-family: "Georgia", serif;
+}
+
+section {
+    margin: 20px; /* Add some margin for spacing */
+}
+
+/* Style for the select element */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the list items */
+}
+
+ul.navbar li {
+    display: inline-block; /* Display the list items horizontally */
+    margin-right: 20px;
+}
+
+ul.navbar li:last-child {
+    margin-right: 0;
+}
+
+ul.navbar li a {
+    display: block;
+    color: black; /* Change the color as needed */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #EB4AFF; /* Change the background color as needed */
+}
+
+ul.navbar li a:hover {
+    background-color: #9F1EAF;
+    color: white; /* Change the color on hover as needed */
+}
+
+/* Dropdown styles */
+ul.navbar li.dropdown {
+    display: inline-block;
+}
+
+ul.navbar .dropbtn {
+    display: block;
+    color: CB18E1; /* Change the color as needed */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #CB18E1; /* Change the background color as needed */
+}
+
+ul.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EB4AFF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+ul.navbar .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+}
+
+ul.navbar .dropdown-content a:hover {
+    background-color: #CB18E1;
+}
+
+ul.navbar li.dropdown:hover .dropdown-content {
+    display: block;
+}

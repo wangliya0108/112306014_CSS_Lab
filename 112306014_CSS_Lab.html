@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="112306014_CSS_Lab.css">
+    <title>My First Style Page</title>
+</head>
+<body color="black" background-color="#f0f0f0" font-family="Arial, sans-serif">
+
+    <header>
+        <center><h1 font-family="Georgia, serif">My first style page</h1></center>
+        <p>Student ID: 112306014</p>
+        <p>Name: 王莉雅</p>
+        <p>Department: 資管一</p>
+    </header>
+
+    <section>
+        <nav>
+            <ul class="navbar">
+            	<li class="dropdown" onclick="toggleDropdown('dropdown-content-1')">
+            		<a href="#" class="dropbtn">FAVORITE APP</a>
+            		<div id="dropdown-content-1" class="dropdown-content">
+            			<a href="https://www.instagram.com/">Instagram</a>
+            			<a href="https://www.facebook.com/?locale=zh_TW">Facebook</a>
+            			<a href="https://www.youtube.com/">Youtube</a>
+            			<a href="https://www.google.com/intl/zh-TW_tw/gmail/about/">Gmail</a>
+            			<a href="https://moodle.nccu.edu.tw/">moodle</a>
+            		</div>
+            	</li>
+            	<li class="dropdown" onclick="toggleDropdown('dropdown-content-2')">
+                    <a href="#" class="dropbtn">FAVORITE COUNTRY</a>
+                    <div id="dropdown-content-2" class="dropdown-content">
+                        <a href="https://en.wikipedia.org/wiki/Taiwan">Taiwan</a>
+                        <a href="https://en.wikipedia.org/wiki/Korea">Korea</a>
+                        <a href="https://en.wikipedia.org/wiki/Vietnam">Vietnam</a>
+                    </div>
+                </li>
+                <li class="dropdown" onclick="toggleDropdown('dropdown-content-3')">
+                    <a href="#" class="dropbtn">FAVORITE SONG</a>
+                    <div id="dropdown-content-3" class="dropdown-content">
+                        <a href="https://youtu.be/v7Pl8HjcIjw?si=Yml3QvDvAnDXy19c">on rainy days - beast</a>
+                        <a href="https://youtu.be/fqBAzCH4-9g?si=Z0k4FOAVCZwkCUH7">roller coaster - nmixx</a>
+                        <a href="https://youtu.be/D8VEhcPeSlc?si=hClJVls0rhIXDZzV">drama - aespa</a>
+                    </div>
+                </li>
+                <li class="dropdown" onclick="toggleDropdown('dropdown-content-4')">
+                    <a href="#" class="dropbtn">NCT SONG</a>
+                    <div id="dropdown-content-4" class="dropdown-content">
+                        <a href="https://youtu.be/jZpr7hfeEVE?si=rikqfLKbjTVxO2Qs">golden age - NCT 2023</a>
+                        <a href="https://youtu.be/63yMOyq8lQM?si=N4aYDklxOKvnQ9lT">gold dust - NCT 127</a>
+                        <a href="https://youtu.be/9BOQjbzn7mU?si=BungpeaFIaXz1N8O">no longer - NCT 127</a>
+                        <a href="https://youtu.be/7uxu4Z2HAnA?si=Qras46c4AmD63JjH">favorite - NCT 127</a>
+                        <a href="https://youtu.be/vGuJuW0bDWA?si=Sy0mMWjV9fSUN_YR">fact check - NCT 127</a>
+                        <a href="https://youtu.be/7nRiE4sLLxE?si=ZA7D1WenP-q8ziap">perfume - NCT DOJAEJUNG</a>
+                        <a href="https://youtu.be/SCK8yBLqQJc?si=1yMSn_SGdH1zQqjG">universe - NCT U</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>
